@@ -129,10 +129,6 @@ article a{
     padding: 164px 85px 164px 0;
     box-sizing: border-box;
 }
-.p_skills_img{
-/*    max-width: 585px;
-    max-height: 570px;*/
-}
 .p_skills span{
     margin-bottom: 21px;
     font-family: 'Montserrat', sans-serif;
@@ -279,4 +275,48 @@ button{
 button span:hover{
     color: #10c9c3;
 }
-
+.our_work_process{
+    text-align: center;
+}
+.our_work_process p{
+    max-width: 500px;
+    margin: auto;
+    font-family: "NunitoSans", sans-serif;
+    font-size: 16px;
+    color: #787878;
+    margin-bottom: 57px;
+}
+.our_work_process h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+.video{
+    max-width: 100%;
+    height: 569px;
+    position: relative;
+    margin-bottom: 200px;
+}
+.play{
+    background-color: #10c9c3;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    top: 44%;
+    left: 46.5%;
+}
+.play:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 17px solid white;
+    border-bottom: 8px solid transparent;
+    cursor: pointer;
+    position: absolute;
+    left: 44%;
+    top: 40%;
+}
