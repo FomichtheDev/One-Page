@@ -82,3 +82,98 @@ article a{
     color: white;
     display: inline-block;
 }
+.about_us{
+    padding: 100px 0;
+    margin: auto;
+    max-width: 620px;
+    text-align: center;
+}
+.about_us h3{
+    font-size: 30px;
+    color: #191919;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 41px;
+}
+.about_us p{
+    max-width: 620px;
+    font-size: 16px;
+    font-family: "NunitoSans", sans-serif;
+}
+.signature{
+    max-width: 222px;
+    max-height: 57px;
+    margin: auto;
+}
+.signature img{
+    width: 100%;
+    height: 100%;
+}
+.test{
+    display: flex;
+    flex-wrap: wrap;
+}
+.for_p_skills{
+    background-color: #f8f9f9;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.for_p_skills_img{
+    width: 50%;
+    background-color: #e9e9e9;
+    display: flex;
+    justify-content: flex-start;
+}
+.p_skills{
+    width: 585px;
+    padding: 164px 85px 164px 0;
+    box-sizing: border-box;
+}
+.p_skills_img{
+/*    max-width: 585px;
+    max-height: 570px;*/
+}
+.p_skills span{
+    margin-bottom: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    display: block;
+    text-transform: uppercase;
+    white-space: pre;
+}
+.p_skills span:first-of-type{;
+    margin-bottom: 41px;
+    font-size: 30px;
+    text-transform: none;
+}
+.p_skills span:first-of-type:after{
+    width: 0;
+    height: 0;
+}
+.bar{
+    width: 100%;
+    height: 3px;
+    background-color: #d8d8d8;
+    margin-bottom: 41px;
+}
+.bar:before{
+    content: "";
+    display: block;
+    background-color: #10c9c3;
+    width: 90%;
+    height: 3px;
+}
+.bar:first-of-type:before{
+    content: "";
+    display: block;
+    background-color: #10c9c3;
+    width: 75%;
+    height: 3px;
+}
+.bar:last-of-type:before{
+    content: "";
+    display: block;
+    background-color: #10c9c3;
+    width: 65%;
+    height: 3px;
+}
