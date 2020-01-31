@@ -36,24 +36,24 @@ header {
     height: 100%;
 }
 
-ul {
+header ul {
     padding-top: 7px;
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-ul li {
+header ul li {
     display: inline;
     text-transform: uppercase;
     margin-right: 30px;
 }
 
-ul li:last-of-type {
+header ul li:last-of-type {
     margin: 0;
 }
 
-ul li a {
+header ul li a {
     color: #191919;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
@@ -61,7 +61,7 @@ ul li a {
     transition: 0.5s;
 }
 
-ul li a:hover, ul li a.active {
+header ul li a:hover,header ul li a.active {
     color: #10c9c3;
 }
 
@@ -330,6 +330,7 @@ button span:hover {
 
 .our_work_process {
     text-align: center;
+    margin-bottom: 200px;
 }
 
 .our_work_process p {
@@ -350,7 +351,6 @@ button span:hover {
     max-width: 100%;
     height: 569px;
     position: relative;
-    margin-bottom: 200px;
 }
 
 .play {
@@ -395,6 +395,7 @@ button span:hover {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
+    display: block;
 }
 
 .service p {
@@ -404,7 +405,7 @@ button span:hover {
     margin-top: 19px;
 }
 
-.picture:before {
+.service:before {
     color: #656565;
     font-size: 48px;
     display: inline-block;
@@ -412,9 +413,6 @@ button span:hover {
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-}
-
-.picture {
     margin-bottom: 30px;
 }
 
@@ -464,4 +462,165 @@ button span:hover {
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
     content: "\f043"
+}
+.testimonials{
+    background-color: #10c9c3;
+    padding: 178px 0;
+    text-align: center;
+}
+.testimonials p{
+    max-width: 805px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.testimonials span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+}
+.partners{
+    padding: 68px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 165px;
+}
+.partner img{
+    width: 100%;
+    height: 100%;
+}
+.partner:first-of-type{
+    max-width: 65px;
+    max-height: 89px;
+}
+.partner:nth-child(2){
+    max-width: 96px;
+    max-height: 58px;
+}
+.partner:nth-child(3){
+    max-width: 71px;
+    max-height: 127px;
+}
+.partner:nth-child(4){
+    max-width: 71px;
+    max-height: 96px;
+}
+.partner:last-of-type{
+    max-width: 65px;
+    max-height: 89px;
+}
+.contact{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.contact h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #1d1d1d;
+}
+.contact p{
+    max-width: 538px;
+    margin: 35px auto 60px;
+    font-family: "NunitoSans", sans-serif;
+    color: #787878;
+    font-size: 16px;
+}
+form{
+    max-width: 700px;
+    margin: auto;
+}
+form span{
+    display: inline-block;
+    min-width: 100px;
+    margin-right: 20px;
+    font-family: "NunitoSans", sans-serif;
+    font-size: 15px;
+    color: #787878;
+    text-align: left;
+}
+form input{
+    border: 1px solid #10c9c3;
+    height: 25px;;
+}
+.for_inp{
+    margin-bottom: 67px;
+}
+textarea{
+    width: 300px;
+    height: 50px;
+    resize: none;
+    border: 1px solid #10c9c3;
+}
+.leftside{
+    display: flex;
+    justify-content: space-between;
+}
+.rightside{
+    text-align: left;
+    margin-bottom: 173px;
+}
+.for_inp:first-of-type{
+    display: inline-block;
+}
+.for_inp:nth-child(2){
+    display: inline-block;
+}
+form button{
+    display: inline-block;
+    padding: 23px 0 22px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #10c9c3;
+    min-width: 180px;
+}
+footer{
+    background-color: #141414;
+    padding: 100px 0;
+}
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+footer span{
+    color: #bcbcbc;
+    font-family: "NunitoSans", sans-serif;
+    font-size: 15px;
+    display: block;
+}
+.copyright span:first-of-type{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+.copyright{
+    display: inline-block;
+    margin-right: 247px;
+}
+.contact_info{
+    display: inline-block;
+    margin-right: 145px;
+    vertical-align: top;
+}
+ul{
+    list-style: none;
+    display: inline-block;
+}
+footer ul li a{
+    display: block;
+    color: #bcbcbc;
+    font-family: "NunitoSans", sans-serif;
+    font-size: 15px;
+}
+footer ul:first-of-type{
+    margin-right: 57px;
+}
+footer .second{
+    margin-right: 135px;
 }
