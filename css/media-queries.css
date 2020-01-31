@@ -15,13 +15,27 @@
     footer ul:first-of-type{
         margin-right: 20px;
     }
+    .p_skills{
+        padding: 0;
+        max-width: 450px;
+        margin: auto;
+    }
 }
 @media only screen and (max-width: 1023px) {
+    header{
+        padding: 20px 0 70px;
+    }
     .fav_icon:before{
         font-size: 40px;
     }
     .copyright{
         margin-right: 150px;
+    }
+    .f_left{
+        margin-left: 10px;
+    }
+    .p_skills{
+        max-width: 400px;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -39,10 +53,28 @@
         left: 44%;
     }
     .copyright{
-        margin-right: 70px;
+        margin: 0;
     }
     .contact_info{
-        margin-right: 70px;
+        margin: 0;
+    }
+    .p_skills{
+        max-width: 300px;
+    }
+    .contact_info{
+        margin-left: 20px;
+    }
+    .contact{
+        padding-bottom: 50px;
+    }
+    .our_work_process{
+        margin-bottom: 75px;
+    }
+    .partners{
+        margin-bottom: 50px;
+    }
+    .rightside{
+        margin-bottom: 75px;
     }
 }
 @media only screen and (max-width: 767px) {
@@ -100,6 +132,9 @@
     .f_right{
         display: flex;
         justify-content: space-between;
+    }
+    .home{
+        margin-bottom: 50px;
     }
 }
 @media only screen and (max-width: 413px) {
