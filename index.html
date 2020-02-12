@@ -8,11 +8,12 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/4d49120294.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Nunito+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
+    <link rel="stylesheet" href="https:///code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <header>
@@ -41,8 +42,20 @@
                     20 years of combined experience, and know a thing or two
                     about designing websites and mobile apps.
                 </p>
-                <a href="#" target="_blank">Contact Us</a>
+                <button id="opener">Contact Us</button>
             </article>
+            <div id="dialog" title="Fogot your password?">
+                <form>
+                    <span>Enter you email</span>
+                    <div class="email">
+                        <input type="email" id="forgoten_email" name="forgoten_email" />
+                    </div>
+                    <button type="submit" class="reset_pass">Reset password</button>
+                </form>
+                <span>or</span>
+                <button type="button" class="via_fb">Log in using facebook</button>
+            </div>
+
         </div>
     </div>
 </header>
@@ -245,7 +258,7 @@
             </div>
             <div class="for_inp">
                 <span>Your Email</span>
-                <input id="email" name="Title" type="text">
+                <input id="email" name="email" type="text">
             </div>
         </div>
         <div class="rightside">
@@ -297,13 +310,39 @@
             </ul>
         </div>
     </div>
+
 </footer>
+<div id="accordion">
+    <h3>Section 1</h3>
+    <div>
+        <p>
+            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+        </p>
+    </div>
+    <h3>Section 2</h3>
+    <div>
+        <p>
+            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+        </p>
+    </div>
+    <h3>Section 3</h3>
+    <div>
+        <p>
+            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+        </p>
+    </div>
+    <h3>Section 4</h3>
+    <div>
+        <p>
+            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+    </div>
+</div>
 <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
         <script src="JS/owl.carousel.min.js"></script>
         <script src="JS/main.js"></script>
-
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>

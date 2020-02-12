@@ -72,7 +72,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-p {
+.home_content p {
     font-family: "NunitoSans", sans-serif;
     font-size: 18px;
     color: #787878;
@@ -85,7 +85,7 @@ p {
     justify-content: flex-end;
 }
 
-article a {
+article button {
     text-transform: uppercase;
     font-size: 12px;
     font-family: 'Montserrat', sans-serif;
@@ -552,7 +552,7 @@ form span{
     color: #787878;
     text-align: left;
 }
-form input{
+.contact form input{
     border: 1px solid #10c9c3;
     height: 25px;;
 }
@@ -677,4 +677,130 @@ footer .second{
 .owl-nav .owl-prev:before{
     content: "\f104";
     left: 10px;
+}
+/*Accordion*/
+/*
+.ui-accordion .ui-accordion-header {
+    padding: 33px 16px 0;
+    background-color: #fce7f2;
+    color: #860da6;
+    border-radius: 0;
+    margin: 0 0 5px;
+}
+#accordion .ui-accordion-header-active .ui-state-active{
+    background-color: white;
+}
+#accordion .ui-icon,#accordion .ui-widget-content .ui-icon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-indent: 0;
+    background-color: transparent;
+}
+#accordion .ui-icon:after{
+    content: "\f105";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: black;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+#accordion .ui-state-active .ui-icon, .ui-button:active .ui-icon,.ui-icon,#accordion .ui-widget-content .ui-icon{
+    background-image: none;
+}
+#accordion h3.ui-state-active span.ui-icon:after{
+    content: "\f0dd";
+}.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border: 0;
+ }
+#accordion h3:hover .ui-state-active .ui-icon, .ui-button:active .ui-icon,#accordion h3:hover .ui-icon, .ui-widget-content .ui-icon{
+    background-image: none;
+}*/
+#dialog{
+    text-align: center;
+    border: 1px solid gray;
+}
+.ui-dialog .ui-dialog-titlebar{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px ;
+}
+.ui-dialog .ui-dialog-title{
+    float: none;
+}
+.ui-widget-header{
+    border: 0;
+    background: black;
+    color: white;
+}
+.ui-widget.ui-widget-content{
+    border: 0;
+    width: 750px!important;
+}
+#dialog button , #dialog span , #dialog label{
+    text-transform: uppercase;
+}
+.ui-dialog{
+    padding: 0;
+}
+#dialog span:first-of-type{
+    display: inline-block;
+    margin-right: 52px;
+    max-width: 138px;
+    text-align: center;
+}
+#dialog form input{
+    width: 100%;
+    border: #b7b7b7 solid 1px;
+    border-radius: 2px;
+    line-height: 58px;
+}
+.email{
+    width: 382px;
+    display: inline-block;
+    margin-bottom: 40px;
+    vertical-align: top;
+}
+.ui-dialog .ui-dialog-content{
+    padding: 33px 85px 167px;
+}
+.reset_pass{
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    color: black;
+    background-color: #d2d2d2;
+    font-weight: bold;
+    font-size: 24px;
+    min-width: 528px;
+    margin-bottom: 30px;
+}
+.via_fb{
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    color: white;
+    background-color: #557bcd;
+    font-weight: bold;
+    font-size: 24px;
+    min-width: 528px;
+}
+.via_fb:before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    content: "\f39e";
+    margin-right: 16px;
+}
+#dialog span{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 30px;
 }
