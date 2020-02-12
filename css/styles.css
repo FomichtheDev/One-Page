@@ -397,6 +397,7 @@ button span:hover {
 .service {
     text-align: center;
     max-width: 235px;
+    margin-bottom: 60px;
 }
 
 .service span {
@@ -634,7 +635,6 @@ footer ul:first-of-type{
 footer .second{
     margin-right: 135px;
 }
-/*
 .owl-dots .owl-dot span{
     display: inline-block;
     width: 6px;
@@ -656,7 +656,7 @@ footer .second{
 }
 .owl-item div{
     margin-bottom: 110px;
-}*/
+}
 .owl-nav .owl-next:after, .owl-nav .owl-prev:before {
     display: inline-block;
     font-style: normal;
@@ -678,27 +678,8 @@ footer .second{
     content: "\f104";
     left: 10px;
 }
-/*Accordion*/
-/*
-.ui-accordion .ui-accordion-header {
-    padding: 33px 16px 0;
-    background-color: #fce7f2;
-    color: #860da6;
-    border-radius: 0;
-    margin: 0 0 5px;
-}
-#accordion .ui-accordion-header-active .ui-state-active{
-    background-color: white;
-}
-#accordion .ui-icon,#accordion .ui-widget-content .ui-icon{
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    text-indent: 0;
-    background-color: transparent;
-}
-#accordion .ui-icon:after{
-    content: "\f105";
+
+.ui-accordion-header:after , .ui-state-active:after{
     font-family: "Font Awesome 5 Pro";
     font-weight: 900;
     color: black;
@@ -707,25 +688,57 @@ footer .second{
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+    content: "\f054";
+    font-size: 26px;
+    position: absolute;
+    right: 28px;
+    top: 44px;
 }
-#accordion .ui-state-active .ui-icon, .ui-button:active .ui-icon,.ui-icon,#accordion .ui-widget-content .ui-icon{
-    background-image: none;
+.ui-state-active:after{
+    content: "\f078";
 }
-#accordion h3.ui-state-active span.ui-icon:after{
-    content: "\f0dd";
-}.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+.ui-accordion-header:before , .ui-state-active:before{
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #860da6;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 44px;
+    left: 18px;
+    margin-right: 11px;
+}
+.ui-state-active .ui-icon, .ui-button:active .ui-icon , .ui-icon, .ui-widget-content .ui-icon{
+    display: none;
+}
+.ui-accordion .ui-accordion-header{
+    padding: 32px 18px 27px;
+    font-size: 30px;
+    margin: 3px 0 0;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover , .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
     border: 0;
- }
-#accordion h3:hover .ui-state-active .ui-icon, .ui-button:active .ui-icon,#accordion h3:hover .ui-icon, .ui-widget-content .ui-icon{
-    background-image: none;
-}*/
-
-
-
-/*Dialog*/
-
-
-/*#dialog{
+    background-color: #fce7f2;
+    color: #860da6;
+}
+#accordion h3{
+    padding-left: 35px;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    background-color: white;
+}
+.ui-accordion .ui-accordion-content{
+    padding: 20px 40px ;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr ,.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl,.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br ,.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border: 0;
+}
+#accordion p{
+    font-size: 24px;
+    color: black;
+}
+#dialog{
     text-align: center;
     border: 1px solid gray;
 }
@@ -763,6 +776,10 @@ footer .second{
     border: #b7b7b7 solid 1px;
     border-radius: 2px;
     line-height: 58px;
+    font-size: 58px;
+}
+.ui-dialog-titlebar-close{
+    display: none;
 }
 .email{
     width: 382px;
@@ -809,4 +826,4 @@ footer .second{
     display: block;
     font-size: 24px;
     margin-bottom: 30px;
-}*/
+}
