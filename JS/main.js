@@ -53,7 +53,30 @@ var navigation = {
         var self = this;
 
         // Handle the transitions
+
         self.$navTrigger.addEventListener('click', function() {
+            $(".nav .nav__item a").click(function(){
+                // .nav--trigger inactive
+                self.$navTrigger.classList.remove('is-active');
+
+                // .nav__content inactive
+                if (self.$navContent.classList.contains('is-active')) {
+                    self.$navContent.classList.remove('is-active');
+                    self.$navContent.addEventListener('transitionend', function(e) {
+                        if (e.propertyName == 'opacity' && !self.$navTrigger.classList.contains('is-active')) {
+                            // .nav inactive
+                            self.$nav.classList.remove('is-active');
+                        }
+                    });
+                } else {
+                    self.$nav.classList.remove('is-active');
+                }
+
+                // no-csstransitions fallback
+                if (document.documentElement.classList.contains('no-csstransitions')) {
+                    self.$nav.classList.remove('is-active');
+                }
+            });
             if (!self.$navTrigger.classList.contains('is-active')) {
                 // .nav--trigger active
                 self.$navTrigger.classList.add('is-active');
@@ -100,4 +123,4 @@ var navigation = {
         });
     }
 };
-navigation.init();
+navigation.init();;
