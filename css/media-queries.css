@@ -20,6 +20,38 @@
         max-width: 450px;
         margin: auto;
     }
+    .nav__item a{
+        font-size: 16px;
+        padding: 0;
+    }
+    header ul li{
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 15px;
+    }
+    .home_content{
+        margin-right: 75px;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-around;
+    }
+    .play{
+        left: 45.5%;
+    }
+    .partners{
+        margin-bottom: 120px;
+    }
+    .contact_info{
+        margin: 0;
+    }
+    .f_left{
+        margin-left: 15px;
+    }
+    .f_right{
+        margin-right: 15px;
+    }
 }
 @media only screen and (max-width: 1023px) {
     header{
@@ -36,6 +68,9 @@
     }
     .p_skills{
         max-width: 400px;
+    }
+    .partners{
+        margin: 0 15px;
     }
 }
 @media only screen and (max-width: 991px) {
@@ -76,16 +111,30 @@
     .rightside{
         margin-bottom: 75px;
     }
+    .testimonials p{
+        max-width: 650px;
+    }
 }
 @media only screen and (max-width: 767px) {
     nav ul li{
         margin-right: 10px;
+        display: block;
+        margin-bottom: 20px;
     }
     header ul li a{
         font-size: 10px;
     }
+    a.nav__trigger{
+        top: 0;
+    }
+    header ul{
+        display: block;
+    }
+    .home_content{
+        margin: 30px 15px 0;
+    }
     .p_skills{
-        padding: 0;
+        padding: 0 15px;
     }
     .p_skills span:first-of-type{
         font-size: 18px;
@@ -108,6 +157,9 @@
     }
     .icons{
         padding: 50px 0;
+    }
+    .fav_icon{
+        margin-left:15px;
     }
     .our_work{
         height: 150px;
@@ -136,8 +188,61 @@
     .home{
         margin-bottom: 50px;
     }
+    .testimonials{
+        padding: 50px 0;
+    }
+    .owl-item div{
+        margin-bottom: 30px;
+    }
+    .testimonials p{
+        margin-top: 100px;
+        max-width: 300px;
+        font-size: 16px;
+    }
+    .owl-nav .owl-prev:before , .owl-nav .owl-next:after{
+        top: 50%
+    }
+    footer{
+        padding:100px 15px 100px 0;
+    }
+    .contact_info{
+        margin-left: 0;
+    }
+    .ui-widget.ui-widget-content{
+        max-width: 414px!important;
+    }.ui-dialog .ui-dialog-content{
+        padding: 30px 30px 60px;
+         }
+    .reset_pass , .via_fb{
+        min-width: 340px;
+    }
+    #dialog span:first-of-type{
+        margin: 0 0 20px;
+        max-width: 100px;
+    }
+    #dialog span{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .email{
+        max-width: 300px;
+    }
+    #dialog form input{
+        line-height: 40px;
+        font-size: 38px;
+
+    }
 }
 @media only screen and (max-width: 413px) {
+    .ui-widget.ui-widget-content {
+        max-width: 375px !important;
+    }
+    .reset_pass , .via_fb{
+        min-width: 340px;
+    }
+    .ui-dialog .ui-dialog-content{
+         padding: 5px 5px 30px;
+     }
     header nav ul li{
         margin-right: 6px;
     }
@@ -164,26 +269,32 @@
     footer ul{
         margin-bottom: 20px;
     }
+    .p_skills {
+        padding: 0;
+    }
+    .play{
+        top: 43%;
+    }
 }
 @media only screen and (max-width: 374px) {
-    nav ul{
-        flex-direction: column;
+    .ui-widget.ui-widget-content {
+        max-width: 320px !important;
+        padding: 0 5px;
     }
-    nav{
-        max-width: 100px;
-        margin: auto;
-    }
-    nav ul li a{
+    .ui-dialog .ui-dialog-titlebar{
         font-size: 20px;
     }
-    nav ul li{
-        margin-bottom: 10px;
+    .reset_pass , .via_fb{
+        min-width: 300px;
     }
     .home{
         margin-bottom: 30px;
     }
     .our_work{
         height: 100px;
+    }
+    .play{
+        left: 39%;
     }
 }
 @media only screen and (max-width: 359px) {
@@ -193,6 +304,14 @@
     .play{
         left: 37%;
         top: 42%;
+    }
+    .p_skills span , .bar{
+        max-width: 100px;
+        margin-right: 0;
+        font-size: 10px;
+    }
+    .p_skills span:first-of-type{
+        font-size: 16px;
     }
 }
 
